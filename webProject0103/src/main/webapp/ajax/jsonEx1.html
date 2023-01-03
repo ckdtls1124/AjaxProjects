@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+</head>
+<body>
+
+	<div class="gnb">
+		<ul>
+			<li class="li">LIST1</li>
+			<li id="li2">LIST2</li>
+			<li class="li3">LIST3</li>
+			<li>LIST4</li>
+			<li>LIST5</li>
+		</ul>
+	</div>
+
+
+
+
+	<script>
+	const li1=document.querySelectorAll('.gnb ul li');
+	const li1_1=li1[0];
+	console.log(li1_1);
+	
+	/*li의 두번째 요소 불러오기 -1  */
+	const li2_1=document.querySelectorAll('.gnb ul li')[1];
+	
+	li2_1.addEventListener('click', ()=>{
+		alert('네이버로 이동');
+		location.href="http://naver.com";
+	}); // 클릭시 해당 URI로 이동
+	
+	/*li의 두번째 요소 불러오기 -2  */
+	const li2_2=document.getElementById('li2');
+	console.log(li2_2);
+	
+	
+	
+		const obj11={
+			userid : 'm1',
+			userpw : 11,
+			arrCode : ['red', 'blue', 'green'],
+			option : true,
+			method1 : ()=>{
+				console.log('메소드 method1');
+			},
+			obj1Sub : {
+				obj1SubMethod : ()=>{
+					console.log('메소드 method2');
+				}
+			}
+		};
+		
+		const  JSON2={
+				'userid' : 'm1',
+				'userpw' : '1234',
+				'username' : 'm1'
+		};	
+	
+	/* 각리스트에 배경색 부여 */
+	
+	const lists=document.querySelectorAll('.gnb ul li');
+	
+	
+	lists.forEach((element)=>{
+    	element.style.backgroundColor('#ff0000');
+	});
+		
+		
+	
+	</script>
+</body>
+</html>
