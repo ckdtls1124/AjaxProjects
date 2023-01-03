@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*
+    기본 reset css
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+}
+
+ul, li{
+    list-style: none;
+} /*Delete the mark '*' in front of every list*/
+a{
+    text-decoration: none;
+}

@@ -4,13 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Index</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<div id="wrap">
-		<div class="header"></div>
-		<div class="container"></div>
-		<div class="footer"></div>
-	</div>
+	<h1>This is an Ajax Check page</h1>
 </body>
 </html>
